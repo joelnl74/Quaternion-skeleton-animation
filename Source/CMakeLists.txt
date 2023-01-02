@@ -1,0 +1,90 @@
+set(DIR ${CMAKE_CURRENT_SOURCE_DIR})
+
+set(BASE_SOURCES
+    ${DIR}/main.cpp
+    ${DIR}/Window.h
+    ${DIR}/Window.cpp
+    ${DIR}/RigLoader.h
+    ${DIR}/RigLoader.cpp
+    ${DIR}/AnimationLoader.h
+    ${DIR}/AnimationLoader.cpp
+    ${DIR}/ModelLoader.h
+    ${DIR}/ModelLoader.cpp
+    ${DIR}/Scene.h
+    ${DIR}/Scene.cpp
+    ${DIR}/InterfaceController.h
+    ${DIR}/InterfaceController.cpp
+    ${DIR}/FBXLoader.h
+    ${DIR}/FBXLoader.cpp
+    ${DIR}/ModelSelector.h
+    ${DIR}/ModelSelector.cpp
+    ${DIR}/Options.h
+    PARENT_SCOPE
+)
+
+set(ANIMATION_BASE_SOURCES
+    ${DIR}/AnimationPlayer.h
+    ${DIR}/AnimationPlayer.cpp
+    ${DIR}/AnimationClip.h
+    ${DIR}/AnimationClip.cpp
+    ${DIR}/Channel.h
+    ${DIR}/Channel.cpp
+    ${DIR}/glmConversion.h
+    ${DIR}/KeyFrame.h
+    ${DIR}/KeyFrame.cpp
+    ${DIR}/Joint.h
+    ${DIR}/Joint.cpp
+    ${DIR}/Rig.h
+    ${DIR}/Rig.cpp
+    PARENT_SCOPE
+)
+
+set(ANIMATION_SKINNING_SOURCES
+    ${DIR}/SkinningMethod.h
+    ${DIR}/Skinning.h
+    ${DIR}/Skinning.cpp
+    ${DIR}/LinearBlendSkinning.h
+    ${DIR}/LinearBlendSkinning.cpp
+    ${DIR}/DualQuaternionSkinning.h
+    ${DIR}/DualQuaternionSkinning.cpp
+    PARENT_SCOPE
+)
+
+set(RENDERING_SOURCES
+    ${DIR}/Renderer.h
+    ${DIR}/Renderer.cpp
+    ${DIR}/Model.h
+    ${DIR}/Model.cpp
+    ${DIR}/Camera.h
+    ${DIR}/Camera.cpp
+    ${DIR}/Shader.h
+    ${DIR}/Shader.cpp
+    ${DIR}/stb_image.h
+    ${DIR}/stb_image.cpp
+    ${DIR}/Texture.h
+    ${DIR}/Texture.cpp
+    ${DIR}/Bounds.h
+    ${DIR}/Bounds.cpp
+    ${DIR}/ArcBall.h
+    ${DIR}/ArcBall.cpp
+    ${DIR}/glad.c
+    PARENT_SCOPE
+)
+
+set(IMGUI_SOURCES
+    ${DIR}/imgui.cpp
+    ${DIR}/imgui.h
+    ${DIR}/imconfig.h
+    ${DIR}/imgui_draw.cpp
+    ${DIR}/imgui_impl_glfw.cpp
+    ${DIR}/imgui_impl_glfw.h
+    ${DIR}/imgui_impl_opengl3.cpp
+    ${DIR}/imgui_impl_opengl3.h
+    ${DIR}/imgui_widgets.cpp
+    ${DIR}/imgui_demo.cpp
+    ${DIR}/imgui_internal.h
+    ${DIR}/imstb_rectpack.h
+    ${DIR}/imstb_textedit.h
+    ${DIR}/imstb_truetype.h
+    PARENT_SCOPE
+)
